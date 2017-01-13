@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.yuan.ringview.MainActivity">
+
+<com.example.yuan.ringview.RingView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:speed="40"
+    app:ringWidth="3dp"
+    android:id="@+id/aa"
+    app:firstColor="@android:color/darker_gray"
+    app:secondColor="@color/colorPrimary"
+    />
+
+    <Button
+        android:layout_below="@id/aa"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/cancle"
+        android:onClick="cancle"
+        android:visibility="gone"
+        />
+
+    <com.example.yuan.ringview.DianDianView
+        android:layout_below="@+id/cancle"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:count="8"
+        app:firstcolor="@color/colorPrimaryDark"
+        app:secondcolor="@android:color/darker_gray"
+        app:distance="30"
+        app:paint_width="18dp"
+        app:bitmap="@mipmap/ic_launcher"
+        />
+</RelativeLayout>

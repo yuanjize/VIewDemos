@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="ringWidth" format="dimension"/>
+    <attr name="speed" format="integer"/>
+    <attr name="firstColor" format="color"/>
+    <attr name="secondColor" format="color"/>
+    <declare-styleable name="RingView">
+        <attr name="ringWidth"/>
+        <attr name="speed"/>
+        <attr name="firstColor"/>
+        <attr name="secondColor"/>
+    </declare-styleable>
+
+    <declare-styleable name="DianDianView">
+        <attr name="distance" format="integer"/>
+        <attr name="diandian_size" format="dimension"/>
+        <attr name="firstcolor" format="color"/>
+        <attr name="secondcolor" format="color"/>
+        <attr name="count" format="integer"/>
+        <attr name="paint_width" format="dimension"/>
+        <attr name="bitmap" format="reference"/>
+    </declare-styleable>
+
+</resources>
